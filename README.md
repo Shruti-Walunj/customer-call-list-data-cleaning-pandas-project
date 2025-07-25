@@ -1,62 +1,26 @@
-# 📊  Customer Call List  Data Cleaning | Pandas
+# 📊  Customer Call List  Data Cleaning Using Pandas
 
-📝 Description
-Performed data cleaning operations on a mock customer dataset using Pandas in Python. Tasks included column cleanup, phone number standardization, and splitting address data into structured components.
+# 📝 Description:
+Cleaned and prepared a raw Excel dataset containing customer contact details using Python and Pandas. The goal was to transform messy data into a reliable format for outreach, ensuring clean phone numbers, accurate names, structured addresses, and removal of non-contactable leads.
 
-# 🔧 Tools & Skills
-Python
+# 🛠️ Key Tasks:
+Removed duplicate records and dropped irrelevant columns
 
-Jupyter Notebook
+Standardized inconsistent last names and reformatted messy phone numbers to XXX-XXX-XXXX
 
-pandas – For data manipulation
+Split full addresses into separate fields: Street, State, and Zip Code
 
-Regex – For string cleaning and validation
+Normalized “Paying Customer” and “Do Not Contact” fields into binary ‘Y/N’ format
 
-# 📁 Dataset
-Source: Excel file – Customer Call List.xlsx
+Filtered out customers who opted not to be contacted and entries with missing phone numbers
 
-Rows: 20 (after removing duplicates)
+Handled null values and reset the index for a clean DataFrame
 
-Columns:
+# 📊Insights:
+The final cleaned dataset was accurate, structured, and ready for operational use. All contacts had valid phone numbers, cleaned names, consistent field values, and clear contact eligibility. The cleaned data can now be directly integrated into CRM tools or used for marketing call campaigns.
 
-CustomerID
-
-First_Name, Last_Name
-
-Phone_Number
-
-Address
-
-Paying Customer, Do_Not_Contact
-
-And one dropped column: Not_Useful_Column
-
-# 🔄 Key Cleaning Steps
-Dropped Unnecessary Columns
-
-Removed Duplicates
-
-Cleaned Last Names
-
-Standardized Phone Numbers
-
-Split Address into Components
-
-Standardized Yes/No Columns
-
-# ✅ Key Insights
-Cleaned and ready-to-use customer contact list for marketing, analytics, or CRM.
-
-Demonstrates effective use of Pandas for ETL tasks like column manipulation, string operations, and data validation.
-
-# 📥 How to Use
-Clone the repo
-
-Open the .ipynb notebook
-
-Run all cells to see the cleaned DataFrame
-
-Export as CSV using df.to_csv() if needed
+# 🧠 Skills & Tools:
+Python | Pandas | Data Cleaning | String Manipulation | Regular Expressions
 
 # 👤 Author
 Shruti Walunj
